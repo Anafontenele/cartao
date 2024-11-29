@@ -1,0 +1,20 @@
+{% extends "cartao/base.html" %}
+
+{% block conteudo %}
+<div class="row">
+{% for cartao in cartoes%}
+<div class= "col-md-2">
+<div class="card">
+    {{cartao.id_validar}}
+    {{cartao.cartao_validar}}
+    {{cartao.nome_validar}}
+    {{cartao.cpf_validar}}
+    {{cartao.codigo_validar}}
+    {{cartao.data_validar}}
+</div>
+{%endfor%}
+
+</div>
+{% endblock conteudo %} 
+
+
